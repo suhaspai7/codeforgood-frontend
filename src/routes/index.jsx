@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Routes, Redirect,BrowserRouter } from 'rea
 import { createBrowserHistory } from 'history';
 
 import Login from '../pages/Login';
-
+import SignUp from '../pages/SignUp';
 
 
 export const history=createBrowserHistory();
@@ -13,7 +13,8 @@ const Routers=()=>{
         <BrowserRouter>
             <Routes>
                 
-                <Route path="login" element={<Login/>}/>
+                <Route path="signin" element={<Login/>}/>
+                <Route path="signup" element={<SignUp/>}/>
             </Routes>
        </BrowserRouter>
 
